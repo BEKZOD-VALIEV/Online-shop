@@ -9,7 +9,16 @@
 }
 .header .top_header {
   max-width: 100%;
-  display: flex; 
+  display: flex;
   padding: 10px 10px;
   background: #f6f7f8;
+}
+.header .top_header .icon {
+  margin-left: 20px;
+  color: #ababab;
+  font-size: 19px;
+}
+.header .top_header .info p {
+  margin-left: 10px;
+  color: #8a8a8a;
 }
