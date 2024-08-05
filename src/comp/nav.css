@@ -22,3 +22,9 @@
   margin-left: 10px;
   color: #8a8a8a;
 }
+.header .mid_header {
+  display: flex;
+  padding: 20px 40px;
+  max-width: 100%;
+  justify-content: space-between;
+}
