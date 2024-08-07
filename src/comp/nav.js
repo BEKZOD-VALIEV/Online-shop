@@ -1,10 +1,13 @@
 import React from "react";
 import { MdLocalShipping } from "react-icons/md";
-import "./nav.css";
 import { CiSearch } from "react-icons/ci";
 import { FiLogIn } from "react-icons/fi";
+import { CiLogout } from "react-icons/ci";
+import { useAuth0 } from "@auth0/auth0-react";
+import "./nav.css";
 
 const Nav = () => {
+  const { loginWithRedirect } = useAuth0();
   return (
     <>
       <div className="header">
@@ -31,7 +34,15 @@ const Nav = () => {
               <FiLogIn />
             </div>
             <div className="btn">
-              <button>Login</button>
+              <button onClick={() => loginWithRedirect()}>Login</button>
+            </div>
+          </div>
+          <div className="user">
+            <div className="icon">
+            <CiLogout />
+            </div>
+            <div className="btn">
+              <button onClick={() => loginWithRedirect()}>Logout</button>
             </div>
           </div>
         </div>
