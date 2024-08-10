@@ -22,7 +22,7 @@ const Nav = () => {
         </div>
         <div className="mid_header">
           <div className="logo">
-            <img src="image/logo.webp" alt="" />
+            <img src="image/logo.webp" alt="logo" ></img>
           </div>
           <div className="search_box">
             <input type="text" value="" placeholder="search" />
