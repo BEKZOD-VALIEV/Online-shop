@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
+import Homeproduct from './home_product'
 
 const Home = () => {
+  const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
   return (
     <>
     <div className="home">
@@ -25,6 +27,24 @@ const Home = () => {
                 <h3>New</h3>
                 <h3>Featured</h3>
                 <h3>top selling</h3>
+              </div>
+            </div>
+            <div className="products">
+              <div className="container">
+                {
+                  trendingProduct.map((curElm) =>
+                  {
+                    return(
+                      <>
+                      <div className="box">
+                        <div className="img_box">
+                          <img src={curElm.image} alt='' ></img>
+                        </div>
+                      </div>
+                      </>
+                    )
+                  })
+                }
               </div>
             </div>
           </div>
