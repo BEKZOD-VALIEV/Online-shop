@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './home.css'
 import { Link } from 'react-router-dom'
 import Homeproduct from './home_product'
+import { FaEye, FaHeart } from "react-icons/fa";
 
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
@@ -39,6 +40,14 @@ const Home = () => {
                       <div className="box">
                         <div className="img_box">
                           <img src={curElm.image} alt='' ></img>
+                          <div className="icon">
+                            <div className="icon_box">
+                            <FaEye />
+                            </div>
+                            <div className="icon_box">
+                            <FaHeart />
+                            </div>
+                          </div>
                         </div>
                       </div>
                       </>
