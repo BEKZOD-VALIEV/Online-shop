@@ -49,6 +49,11 @@ const Home = () => {
                             </div>
                           </div>
                         </div>
+                        <div className="info">
+                          <h3>{curElm.Name}</h3>
+                          <p>${curElm.price}</p>
+                          <button className='btn'>Add to cart</button>
+                        </div>
                       </div>
                       </>
                     )

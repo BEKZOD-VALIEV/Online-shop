@@ -99,7 +99,7 @@
 .home .trending .container .left_box .products .container .box{
   width: 195px;
   height: 295px;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   border: 2px solid #f6f7f8;
   margin-top: 20px;
   margin-left: 20px;
@@ -122,7 +122,7 @@
   transition: 0.5s;
 }
 .home .trending .container .left_box .products .container .box:hover .img_box .icon{
-  margin-left: -35%;
+  margin-left: -32%;
 }
 .home .trending .container .left_box .products .container .box .img_box .icon .icon_box{
   padding: 10px 10px;
@@ -136,4 +136,39 @@
 .home .trending .container .left_box .products .container .box .img_box .icon .icon_box:hover{
   color: #fff;
   background: #cd1e76;
+}
+.home .trending .container .left_box .products .container .box .info{
+  padding: 10px 10px;
+  margin-left: 15px;
+}
+.home .trending .container .left_box .products .container .box .info h3{
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #232323;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.home .trending .container .left_box .products .container .box .info p{
+  color: #cd1e76;
+  margin-top: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.home .trending .container .left_box .products .container .box .info .btn{
+  margin-top: 10px;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 20px;
+  border: none;
+  background: none;
+  outline: none;
+  background: #fed700;
+  color: #232323;
+  text-transform: capitalize;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.home .trending .container .left_box .products .container .box .info .btn:hover{
+  background: #cd1e76;
+  color: #f6f7f8;
 }
