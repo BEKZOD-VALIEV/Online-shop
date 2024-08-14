@@ -6,6 +6,20 @@ import { FaEye, FaHeart } from "react-icons/fa";
 
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
+  // Filter of tranding product
+  const filtercate = (x) =>
+  {
+    const filterproduct = Homeproduct.filter((curElm) =>
+    {
+      return curElm.type === x
+    })
+    setTrendingProduct(filterproduct)
+  }
+  // All Trending Product
+  const allTrendingProduct = () =>
+  {
+    setTrendingProduct(Homeproduct)
+  }
   return (
     <>
     <div className="home">
@@ -22,12 +36,12 @@ const Home = () => {
           <div className="left_box">
             <div className="header">
               <div className="heading">
-                <h2>trending product</h2>
+                <h2 onClick={() => allTrendingProduct ()}>trending product</h2>
               </div>
               <div className="cate">
-                <h3>New</h3>
-                <h3>Featured</h3>
-                <h3>top selling</h3>
+                <h3 onClick={() => filtercate ('new')}>New</h3>
+                <h3 onClick={() => filtercate ('featured')}>Featured</h3>
+                <h3 onClick={() => filtercate ('top')}>top selling</h3>
               </div>
             </div>
             <div className="products">
