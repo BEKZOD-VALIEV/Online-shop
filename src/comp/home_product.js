@@ -3,7 +3,7 @@ const Homeproduct =
   {
     id: 1,
     Name: 'product1',
-    price: '26',
+    price: '320',
     image: 'image/p1.webp',
     cat: 'tv',
     type: 'new',
@@ -11,7 +11,7 @@ const Homeproduct =
   {
     id: 2,
     Name: 'product2',
-    price: '96',
+    price: '2700',
     image: 'image/p2.webp',
     cat: 'laptop',
     type: 'new',
@@ -27,7 +27,7 @@ const Homeproduct =
   {
     id: 4,
     Name: 'product4',
-    price: '636',
+    price: '860',
     image: 'image/p9.jpg',
     cat: 'laptop',
     type: 'new',
@@ -35,7 +35,7 @@ const Homeproduct =
   {
     id: 5,
     Name: 'product5',
-    price: '98',
+    price: '320',
     image: 'image/p4.webp',
     cat: 'speaker',
     type: 'new',
@@ -43,7 +43,7 @@ const Homeproduct =
   {
     id: 6,
     Name: 'product6',
-    price: '59',
+    price: '88',
     image: 'image/p5.webp',
     cat: 'electronics',
     type: 'featured',
@@ -51,7 +51,7 @@ const Homeproduct =
   {
     id: 7,
     Name: 'product7',
-    price: '956',
+    price: '320',
     image: 'image/p10.jpg',
     cat: 'headphone',
     type: 'featured',
@@ -59,7 +59,7 @@ const Homeproduct =
   {
     id: 8,
     Name: 'product8',
-    price: '389',
+    price: '430',
     image: 'image/p11.jpg',
     cat: 'electronics',
     type: 'featured',
@@ -67,7 +67,7 @@ const Homeproduct =
   {
     id: 9,
     Name: 'product9',
-    price: '67',
+    price: '450',
     image: 'image/p6.webp',
     cat: 'phone',
     type: 'top',
@@ -75,7 +75,7 @@ const Homeproduct =
   {
     id: 10,
     Name: 'product10',
-    price: '76',
+    price: '320',
     image: 'image/p7.webp',
     cat: 'speaker',
     type: 'top',
@@ -83,7 +83,7 @@ const Homeproduct =
   {
     id: 11,
     Name: 'product11',
-    price: '87',
+    price: '320',
     image: 'image/p8.webp',
     cat: 'speaker',
     type: 'top',
@@ -91,7 +91,7 @@ const Homeproduct =
   {
     id: 12,
     Name: 'product12',
-    price: '807',
+    price: '455',
     image: 'image/p12.jpg',
     cat: 'speaker',
     type: 'top',
