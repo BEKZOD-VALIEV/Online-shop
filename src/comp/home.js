@@ -2,7 +2,14 @@ import React, { useState } from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import Homeproduct from "./home_product";
-import { FaEye, FaHeart, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import {
+  FaEye,
+  FaHeart,
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa";
 
 const Home = () => {
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
@@ -70,6 +77,7 @@ const Home = () => {
                     );
                   })}
                 </div>
+                <button>Show More</button>
               </div>
             </div>
             <div className="right_box">
@@ -121,6 +129,15 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="banners">
+          <div className="container">
+            <div className="left_box">
+              <div className="box">
+                <img src="image/Multi-Banner-1.avif" alt="" />
               </div>
             </div>
           </div>
