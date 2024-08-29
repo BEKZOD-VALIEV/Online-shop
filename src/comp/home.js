@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import Homeproduct from "./home_product";
@@ -12,6 +12,9 @@ import {
 } from "react-icons/fa";
 
 const Home = () => {
+  //Product Category
+  const [newProduct, setNewProduct] = useState('')
+  //Trending Product
   const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
   // Filter of tranding product
   const filtercate = (x) => {
@@ -24,6 +27,16 @@ const Home = () => {
   const allTrendingProduct = () => {
     setTrendingProduct(Homeproduct);
   };
+  // Product Type
+  useEffect(() => {
+    productCategory()
+  })
+  const productCategory = () => {
+    const newCategory = Homeproduct.filter((x) => {
+      return x.type === 'new'
+    })
+    setNewProduct(newCategory)
+  }
   return (
     <>
       <div className="home">
@@ -151,6 +164,29 @@ const Home = () => {
               <div className="bottom">
                 <img src="image/Multi-Banner-5.webp" alt="" />
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="product_type">
+          <div className="container">
+            <div className="box">
+              <div className="header">
+                <h2>New Product</h2>
+              </div>
+              {
+                newProduct.map((curElm) =>
+                {
+                  return(
+                    <>
+                    <div className="productbox">
+                      <div className="img-box">
+                        <img src={curElm.image} alt="" />
+                      </div>
+                    </div>
+                    </>
+                  )
+                })
+              }
             </div>
           </div>
         </div>
