@@ -2,29 +2,25 @@ import React, { useEffect, useState } from "react";
 import "./home.css";
 import { Link } from "react-router-dom";
 import Homeproduct from "./home_product";
-import {
-  FaEye,
-  FaHeart,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
+import { FaEye, FaHeart, FaCartShopping, FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 const Home = () => {
   //Product Category
-  const [newProduct, setNewProduct] = useState('')
+  const [newProduct, setNewProduct] = useState([])
   //Trending Product
-  const [trendingProduct, setTrendingProduct] = useState(Homeproduct);
+  const [trendingProduct, setTrendingProduct] = useState(Homeproduct)
   // Filter of tranding product
-  const filtercate = (x) => {
-    const filterproduct = Homeproduct.filter((curElm) => {
+  const filtercate = (x) =>
+    {
+    const filterproduct = Homeproduct.filter((curElm) =>
+      {
       return curElm.type === x;
     });
     setTrendingProduct(filterproduct);
   };
   // All Trending Product
-  const allTrendingProduct = () => {
+  const allTrendingProduct = () =>
+    {
     setTrendingProduct(Homeproduct);
   };
   // Product Type
@@ -181,6 +177,15 @@ const Home = () => {
                     <div className="productbox">
                       <div className="img-box">
                         <img src={curElm.image} alt="" />
+                      </div>
+                      <div className="detail">
+                        <h3>{curElm.Name}</h3>
+                        <p>$ {curElm.price}</p>
+                        <div className="icon">
+                          <button><FaEye /></button>
+                          <button><FaHeart /></button>
+                          <button><FaCartShopping /></button>
+                        </div>
                       </div>
                     </div>
                     </>
