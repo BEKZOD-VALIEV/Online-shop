@@ -38,7 +38,7 @@ const Homeproduct =
     price: '320',
     image: 'image/p4.webp',
     cat: 'speaker',
-    type: 'new',
+    type: 'featured',
   },
   {
     id: 6,
