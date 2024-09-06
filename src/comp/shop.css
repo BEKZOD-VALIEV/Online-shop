@@ -31,7 +31,7 @@
 }
 .shop .container .left_box .category{
   border: 3px solid #f6f6f6;
-  width: 200px;
+  width: 250px;
 }
 .shop .container .left_box .category .header{
   max-width: 100%;
@@ -43,7 +43,6 @@
   color: #232323;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-align: center;
 }
 .shop .container .left_box .category .box{
   margin-top: 10px;
@@ -55,5 +54,24 @@
 }
 .shop .container .left_box ul li{
   list-style: none;
-  margin-left: 20px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8a8a8a;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.shop .container .left_box ul li:hover{
+  color: #232323;
+}
+.shop .container .left_box .banner{
+  margin-top: 20px;
+  width: 250px;
+}
+.shop .container .left_box .banner .img_box img{
+  width: 100%;
+  object-fit: cover;
 }

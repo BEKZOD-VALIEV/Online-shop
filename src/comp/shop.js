@@ -25,6 +25,18 @@ const Shop = () => {
               </ul>
             </div>
           </div>
+          <div className="banner">
+            <div className="img_box">
+              <img src="image/shop_left.avif" alt="" />
+            </div>
+          </div>
+        </div>
+        <div className="right_box">
+          <div className="banner">
+            <div className="img_box">
+              <img src="image/shop_top.webp" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
