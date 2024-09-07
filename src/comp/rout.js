@@ -3,12 +3,12 @@ import { Routes, Route } from 'react-router';
 import Home from './home';
 import Shop from './shop'
 
-const Rout = () => {
+const Rout = ({shop}) => {
   return (
     <>
     <Routes>
       <Route path='/' element={<Home />} />
-      <Route path='shop' element={<Shop />} />
+      <Route path='shop' element={<Shop shop={shop} />} />
     </Routes>
     </>
   )
