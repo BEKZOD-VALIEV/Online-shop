@@ -1,7 +1,7 @@
 import React from 'react'
 import './shop.css'
 
-const Shop = () => {
+const Shop = ({shop}) => {
   return (
     <>
     <div className="shop">
@@ -35,6 +35,24 @@ const Shop = () => {
           <div className="banner">
             <div className="img_box">
               <img src="image/shop_top.webp" alt="" />
+            </div>
+          </div>
+          <div className="product_box">
+            <div className="product_container">
+              {
+                shop.map((curElm) => {
+                  return(
+                    <>
+                    <div className="box">
+                      <div className="img_box">
+                        <img src={curElm.image} alt="" />
+                      </div>
+                    </div>
+                    </>
+                  )
+                }
+                )
+              }
             </div>
           </div>
         </div>

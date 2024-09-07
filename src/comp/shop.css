@@ -75,3 +75,13 @@
   width: 100%;
   object-fit: cover;
 }
+.shop .container .right_box {
+  width: 74%;
+}
+.shop .container .right_box .banner{
+  max-width: 100%;
+}
+.shop .container .right_box .banner .img_box img{
+  width: 100%;
+  object-fit: cover;
+}
