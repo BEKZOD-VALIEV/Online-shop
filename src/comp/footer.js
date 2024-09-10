@@ -77,8 +77,8 @@ const Footer = () => {
               <div className="box">
                 <h3>Contact Us</h3>
                 <ul>
-                  <li>Jizzax city Apple shop.</li>
-                  <li>+99899 123 45 67</li>
+                  <li>Gangnam city Apple shop.</li>
+                  <li>+8210 7854 1661</li>
                   <li>appleshop@gmail.com</li>
                 </ul>
               </div>
