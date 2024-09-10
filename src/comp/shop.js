@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaHeart,FaEye } from "react-icons/fa";
 import './shop.css'
 
 const Shop = ({shop}) => {
@@ -38,6 +39,7 @@ const Shop = ({shop}) => {
             </div>
           </div>
           <div className="product_box">
+            <h2>Shop Product</h2>
             <div className="product_container">
               {
                 shop.map((curElm) => {
@@ -46,6 +48,10 @@ const Shop = ({shop}) => {
                     <div className="box">
                       <div className="img_box">
                         <img src={curElm.image} alt="" />
+                        <div className="icon">
+                        <FaHeart />
+                        <FaEye />
+                        </div>
                       </div>
                     </div>
                     </>
