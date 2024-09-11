@@ -2,7 +2,7 @@ import React from "react";
 import { FaHeart, FaEye } from "react-icons/fa";
 import "./shop.css";
 
-const Shop = ({ shop }) => {
+const Shop = ({ shop, Filter, allcatefilter }) => {
   return (
     <>
       <div className="shop">
@@ -16,13 +16,14 @@ const Shop = ({ shop }) => {
               </div>
               <div className="box">
                 <ul>
-                  <li># tv</li>
-                  <li># laptop</li>
-                  <li># watch</li>
-                  <li># speaker</li>
-                  <li># electronics</li>
-                  <li># headphone</li>
-                  <li># phone</li>
+                  <li onClick={() => allcatefilter ()}># All</li>
+                  <li onClick={() => Filter ("tv")}># tv</li>
+                  <li onClick={() => Filter ("laptop")}># laptop</li>
+                  <li onClick={() => Filter ("watch")}># watch</li>
+                  <li onClick={() => Filter ("speaker")}># speaker</li>
+                  <li onClick={() => Filter ("electronics")}># electronics</li>
+                  <li onClick={() => Filter ("headphone")}># headphone</li>
+                  <li onClick={() => Filter ("phone")}># phone</li>
                 </ul>
               </div>
             </div>
