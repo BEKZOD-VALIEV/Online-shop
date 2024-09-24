@@ -377,7 +377,7 @@
 }
 .home .product_type{
   padding: 20px 30px;
-  width: 100%;
+  width: 99%;
 }
 .home .product_type .container{
   display: flex;
@@ -385,7 +385,7 @@
   justify-content: space-between;
 }
 .home .product_type .container .box{
-  width: 360px;
+  width: 500px;
   height: 560px;
   border: 3px solid #f6f7f8;
   padding: 10px 10px;
@@ -411,7 +411,7 @@
   display: flex;
 }
 .home .product_type .container .box .productbox .img-box img{
-  width: 100px;
+  width: 170px;
   height: 100px;
   object-fit: cover;
 }
